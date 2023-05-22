@@ -1,0 +1,7 @@
+requests
+xlrd
+openpyxl
+pypdf
+pytest==7.3.0
+selenium==4.5.0
+selene==2.0.0b17
