@@ -2,13 +2,13 @@ import os
 
 import xlrd
 
-from os_path.os_path_scripts import PROJECT_ROOT_PATH
+from os_path_scripts import PROJECT_ROOT_PATH
 
 
 # TODO оформить в тест, добавить ассерты и использовать универсальный путь
 
 def test_xls():
-    xls_path = os.path.join(PROJECT_ROOT_PATH, '..', 'resources', 'file_example_XLS_10.xls')
+    xls_path = os.path.join(PROJECT_ROOT_PATH, 'resources', 'file_example_XLS_10.xls')
 
     book = xlrd.open_workbook(xls_path)
     print(f'Количество листов {book.nsheets}')

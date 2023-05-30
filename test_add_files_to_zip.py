@@ -1,11 +1,11 @@
 import os
 import zipfile
 
-from os_path.os_path_scripts import PROJECT_ROOT_PATH
+from os_path_scripts import PROJECT_ROOT_PATH
 
 
 def test_add_files_to_zip():
-    zip_path = os.path.join(PROJECT_ROOT_PATH, '..', 'resources')
+    zip_path = os.path.join(PROJECT_ROOT_PATH, 'resources')
     zip_name = "test.zip"
     with zipfile.ZipFile(zip_name, "w") as zip_file:
         for file_name in os.listdir(zip_path):

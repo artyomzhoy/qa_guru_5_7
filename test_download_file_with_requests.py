@@ -1,12 +1,12 @@
 import os.path
 import requests
-from os_path.os_path_scripts import PROJECT_ROOT_PATH
+from os_path_scripts import PROJECT_ROOT_PATH
 
 
 def test_downloaded_file_size():
     # TODO сохранять и читать из tmp, использовать универсальный путь
 
-    tmp = os.path.join(PROJECT_ROOT_PATH, '..', 'tmp')
+    tmp = os.path.join(PROJECT_ROOT_PATH, 'tmp')
     if not os.path.exists(tmp):
         os.mkdir(tmp)
 
